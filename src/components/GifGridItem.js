@@ -2,9 +2,9 @@ import React from 'react';
 
 export const GifGridItem = ({ id, title, url }) => {
   return (
-    <div className='card'>
+    <div className='card animate__animated animate__fadeInDown'>
       <img src={url} alt={title} loading='lazy' />
-      <p>{title.toUpperCase()}</p>
+      <p>{title.toUpperCase() ? title : 'Imagen without title 😢'}</p>
     </div>
   );
 };

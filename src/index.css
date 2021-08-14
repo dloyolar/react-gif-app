@@ -1,9 +1,31 @@
 * {
   font-family: Helvetica, Arial, sans-serif;
 }
+h1,
+h2,
+h3 {
+  color: #fff;
+}
 
 body {
   padding: 60px;
+  background: rgb(181, 181, 181);
+  background: -moz-linear-gradient(
+    90deg,
+    rgba(181, 181, 181, 1) 0%,
+    rgba(165, 166, 164, 1) 100%
+  );
+  background: -webkit-linear-gradient(
+    90deg,
+    rgba(181, 181, 181, 1) 0%,
+    rgba(165, 166, 164, 1) 100%
+  );
+  background: linear-gradient(
+    90deg,
+    rgba(181, 181, 181, 1) 0%,
+    rgba(165, 166, 164, 1) 100%
+  );
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#b5b5b5",endColorstr="#a5a6a4",GradientType=1);
 }
 
 input {
@@ -11,6 +33,7 @@ input {
   width: 100%;
   border-radius: 6px;
   color: gray;
+  outline: none;
 }
 
 .card-grid {
@@ -22,17 +45,22 @@ input {
 .card {
   align-content: center;
   border: 1px solid gray;
-  border-radius: 6px;
+  border-radius: 16px;
   overflow: hidden;
   margin: 10px;
   max-width: 300px;
   height: auto;
+  background: rgb(2, 0, 36);
+  background: #b8b5ec;
+  -webkit-box-shadow: 5px 5px 13px 7px rgba(0, 0, 0, 0.23);
+  box-shadow: 5px 5px 13px 7px rgba(0, 0, 0, 0.23);
 }
 
 .card p {
   font-size: 1.2em;
   padding: 5px;
   text-align: center;
+  color: #fff;
 }
 
 .card img {
