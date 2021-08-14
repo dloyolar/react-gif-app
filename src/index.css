@@ -12,3 +12,29 @@ input {
   border-radius: 6px;
   color: gray;
 }
+
+.card-grid {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+.card {
+  align-content: center;
+  border: 1px solid gray;
+  border-radius: 6px;
+  overflow: hidden;
+  margin: 10px;
+  max-width: 300px;
+  height: auto;
+}
+
+.card p {
+  font-size: 1.2em;
+  padding: 5px;
+  text-align: center;
+}
+
+.card img {
+  max-height: 300px;
+}
