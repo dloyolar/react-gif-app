@@ -58,7 +58,6 @@ input {
   box-shadow: 5px 5px 13px 7px rgba(0, 0, 0, 0.23);
   display: flex;
   flex-direction: column;
-  justify-content: center;
   align-items: center;
 }
 
@@ -70,5 +69,5 @@ input {
 }
 
 .card img {
-  max-height: 300px;
+  max-height: 330px;
 }
