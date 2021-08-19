@@ -2,8 +2,9 @@ import React, { useState } from 'react';
 import { AddCategory } from './components/AddCategory';
 import { GifGrid } from './components/GifGrid';
 
-export const GifApp = () => {
-  const [categories, setCategories] = useState(['Kimetsu no Yaiba']);
+export const GifApp = ({ defaultCategories = ['Haikyuu'] }) => {
+  // const [categories, setCategories] = useState(['Kimetsu no Yaiba']);
+  const [categories, setCategories] = useState(defaultCategories);
 
   return (
     <>
